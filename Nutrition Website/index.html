@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutrifyLife</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>NutrifyLife</h1>
+    <h3>Elevate Your Health with Every Choice</h3>
+</header>
+<section>
+<main>
+    
+    <h2>Find Your Nutritional Chart</h2>
+    
+    <label for="ageGroup" >Select Age Group:</label>
+    <select id="ageGroup" >
+        <option value="3-14">3-14</option>
+        <option value="15-30">15-30</option>
+        <option value="31-60">31-60</option>
+        <option value="above-60">Above 60</option> <!-- New Age Group Added -->
+    </select>
+
+    <label for="condition">Select Health Condition:</label>
+    <select id="condition">
+        <option value="none">No Disease</option>
+        <option value="diabetes">Diabetes</option>
+        <option value="cancer">Cancer</option>
+        <option value="heart">Heart Disease</option>
+        <option value="obesity">Obesity</option>
+    </select>
+
+    <button onclick="showNutritionalChart()">Show Nutritional Chart</button>
+    
+    <div id="chart" class="result"></div>
+    
+    <button id="clearButton">Clear</button>
+</main>
+</section>
+<script src="script.js"></script>
+
+</body>
+</html>
